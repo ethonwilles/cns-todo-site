@@ -9,8 +9,11 @@ const Content = () => {
       .then((data) => setTasks(data.items));
   }, []);
   const renderTasks = () => {
+    console.log(tasks);
     return tasks.map((elem) => {
-      return <Todo content={elem.task} />;
+      if (elem.completed === false) {
+        return <Todo content={elem.task} check={elem.completed} />;
+      }
     });
   };
   return <div className="content">{renderTasks()}</div>;
