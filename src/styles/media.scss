@@ -2,6 +2,19 @@
   body {
     margin: 0;
   }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  select {
+    width: 20vw;
+    padding: 7px;
+    margin-top: 5px;
+    font-size: 20px;
+    border: 1.5px solid black;
+    cursor: pointer;
+  }
   .App {
     display: flex;
     flex-direction: column;

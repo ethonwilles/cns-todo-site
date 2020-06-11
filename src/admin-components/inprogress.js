@@ -10,7 +10,9 @@ const InProgress = () => {
   const renderItems = () => {
     return complete.map((elem) => {
       if (elem.completed === false) {
-        return <Todo content={elem.task} check={elem.completed} />;
+        return (
+          <Todo content={elem.task} check={elem.completed} date={elem.date} />
+        );
       }
     });
   };

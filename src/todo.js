@@ -23,7 +23,11 @@ const Todo = (props) => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ task: props.content, completed: true }),
+        body: JSON.stringify({
+          task: props.content,
+          completed: true,
+          date: props.date,
+        }),
       });
     }
   };

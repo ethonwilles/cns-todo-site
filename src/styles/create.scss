@@ -1,6 +1,9 @@
 .create {
   display: flex;
   justify-content: center;
+  select {
+    width: auto;
+  }
   form {
     display: flex;
     flex-direction: column;

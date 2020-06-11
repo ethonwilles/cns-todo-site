@@ -10,7 +10,9 @@ function App() {
     <div className="App">
       <BR>
         <div className="navbar">
-          <Link to="/admin">Admin</Link>
+          <Link to="/admin" id="admin-link">
+            Admin
+          </Link>
           <Link to="/content">Jordon ToDo</Link>
         </div>
 

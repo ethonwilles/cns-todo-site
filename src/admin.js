@@ -10,7 +10,9 @@ const Admin = () => {
   return (
     <div className="admin">
       <div className="buttons">
-        <button onClick={() => setCheck(0)}>Create</button>
+        <button id="create-link" onClick={() => setCheck(0)}>
+          Create
+        </button>
         <button onClick={() => setCheck(1)}>Completed</button>
         <button onClick={() => setCheck(2)}>In Progress</button>
       </div>
