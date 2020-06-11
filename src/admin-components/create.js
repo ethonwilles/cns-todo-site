@@ -27,6 +27,8 @@ const Create = () => {
     })
       .then((res) => res.json())
       .then((data) => console.log(data));
+
+    setTask("");
   };
 
   const renderOptions = () => {
@@ -44,6 +46,7 @@ const Create = () => {
         <textarea
           placeholder="Enter task here.."
           onChange={(e) => setTask(e.target.value)}
+          value={task}
         />
         <select
           onChange={(e) => {
